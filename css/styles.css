@@ -1,0 +1,96 @@
+/*Reset básico*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: #002; 
+}
+/*estilizando o projeto: */
+.game-board{
+  width: 90%;
+  height: 600px;
+  
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #e0f6ff);
+
+  border-radius: 1rem;
+  border: .255rem  solid rgb(230, 255, 3);
+  border-bottom: 18px solid rgb(35, 160, 35);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+img {
+  background-color: transparent;
+}
+
+.clouds {
+  position: absolute;
+  margin-top: 30px;
+  width: 550px;
+  animation: clouds-animation 20s infinite linear;
+}
+.pipe{
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario{
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump{
+  animation: jump 500ms ease-out;
+}
+
+@keyframes pipe-animation {
+  from{
+    right: -80px;
+  }
+  to{
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40%{
+    bottom: 180px;
+  }
+  50%{
+    bottom: 180px;
+  }
+  60%{
+    bottom: 180px;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -550px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
