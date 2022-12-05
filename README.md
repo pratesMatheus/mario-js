@@ -1,3 +1,3 @@
 # Mario JS
 
-**Link**:
+**Link**: https://math-mariojs.netlify.app/
