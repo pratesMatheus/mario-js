@@ -33,6 +33,6 @@ const loop = setInterval(()=>{
   }
 },10);
 
-document.addEventListener('keydown', jump);
+document.addEventListener('keydown' || 'click', jump);
 
 // 'keydown', quando a qualquer tecla for pressionada
